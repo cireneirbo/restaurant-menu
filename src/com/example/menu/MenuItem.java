@@ -73,11 +73,7 @@ public class MenuItem {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MenuItem menuItem = (MenuItem) o;
-        return  Objects.equals(name, menuItem.name) &&
-                Objects.equals(price, menuItem.price) &&
-                Objects.equals(description, menuItem.description) &&
-                Objects.equals(category, menuItem.category) &&
-                Objects.equals(isRecentMenuAddition, menuItem.isRecentMenuAddition);
+        return  Objects.equals(name, menuItem.name);
     }
 
     @Override

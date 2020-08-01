@@ -49,6 +49,11 @@ public class Main {
 
         System.out.println(menu.menuPrint());
 
+
+        System.out.println(froggyLegFishFangers);
+        menu.removeMenuItem(milkSteak);
+        System.out.println(menu.menuPrint());
+
     }
 
 }

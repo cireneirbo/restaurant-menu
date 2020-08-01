@@ -35,12 +35,17 @@ public class Menu {
         menuList.add(menuItem);
     }
 
+    public void removeMenuItem(Object menuItem) {
+        menuList.remove(menuItem);
+    }
+
     public String menuPrint() {
-        String output = "";
-        for(Object obj : menuList) {
-            output += obj + "\n";
-        }
-        return output;
+        String output = "_________\n";
+            for(Object obj : menuList) {
+                output += obj + "\n" + "_________\n";
+            }
+
+        return output + "Menu last updated: " + getMenuLastUpdated();
     }
 
 }
